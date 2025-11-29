@@ -82,10 +82,12 @@ def main():
 
     # --- HACK BREACKPOINT: MODO TURBO (1 VÍDEO) ---
     # Isso garante que o treino rode em segundos para validação do conceito
-    print(f"\n[DEBUG - OVERFITTING TEST] Reduzindo dataset de {len(train_keys)} para 1 vídeo apenas!")
-    train_keys = train_keys[:1] # Pega apenas o primeiro vídeo da lista de treino
-    test_keys = test_keys[:1]   # Pega apenas o primeiro vídeo para teste
+    #print(f"\n[DEBUG - OVERFITTING TEST] Reduzindo dataset de {len(train_keys)} para 1 vídeo apenas!")
+    #train_keys = train_keys[:1] # Pega apenas o primeiro vídeo da lista de treino
+    #test_keys = test_keys[:1]   # Pega apenas o primeiro vídeo para teste
     # -------------------------------------------
+
+    # (Hack removido. Agora ele usa as listas originais do arquivo json)
 
     print("# total videos {}. # train videos {}. # test videos {}".format(num_videos, len(train_keys), len(test_keys)))
     print("Initialize model")
